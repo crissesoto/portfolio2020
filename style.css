@@ -5,7 +5,36 @@ body, html {
 
 }
 
-/* The hero image */
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    display: flex;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 10px;
+  }
+  
+  /* Links inside the navbar */
+  .links{
+      margin-right: 20px;
+  }
+  .navbar a {
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
 
 .hero {
     min-height: 100vh;
@@ -17,7 +46,7 @@ body, html {
     position: absolute;
     left: 0;
     top: 10%;
-    height: 100%;
+    height: 90%;
     width: 100%;
     object-fit: cover;
     z-index: 1;
@@ -30,7 +59,7 @@ body, html {
     position: absolute;
     left: 0;
     top: 10%;
-    height: 100%;
+    height: 90%;
     width: 100%;
     object-fit: cover;
     animation:  reveal 1s ease 0.5s forwards,  
@@ -52,6 +81,6 @@ body, html {
         transform: rotateZ(0deg);
     }
     to{
-        transform: rotate(2deg);
+        transform: rotate(1.5deg);
     }
 }
