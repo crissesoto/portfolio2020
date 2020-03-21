@@ -52,6 +52,6 @@ body, html {
         transform: rotateZ(0deg);
     }
     to{
-        transform: rotate(3deg);
+        transform: rotate(2deg);
     }
 }
