@@ -41,12 +41,14 @@ body, html {
     overflow: hidden;
 }
 
+
+
 .hero img{
     position: absolute;
-    left: 0;
     top: 10%;
+    left: 10%;
     height: 90%;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     z-index: 1;
     mix-blend-mode: lighten;
@@ -54,18 +56,29 @@ body, html {
                 swing 3s ease-in-out infinite alternate-reverse;
     opacity: 0;
 }
+
 .hero video{
     position: absolute;
-    left: 0;
+    left: 10%;
     top: 10%;
     height: 90%;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     animation:  reveal 1s ease 0.5s forwards,  
                 swing 3s ease-in-out infinite alternate-reverse;
     opacity: 0;
 }
 
+.name {
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    writing-mode: vertical-rl;
+    font-size: 5.8vw;
+    float: right;
+    margin: 0;
+    z-index: 100;
+  }
 
 @keyframes reveal {
     from{
